@@ -13,7 +13,7 @@ metadata:
 spec:
   destination:
     namespace: openshift-operators
-    server: 'https://kubernetes.default.svc'
+    server: "https://kubernetes.default.svc"
   project: services
   source:
     path: operators/ibm-ace-operator
@@ -24,7 +24,7 @@ spec:
             ibmace:
               name: ibm-ace
               subscription:
-                channel: v4.2
+                channel: v12.1
                 installPlanApproval: Automatic
                 name: ibm-appconnect
                 source: ibm-operator-catalog
