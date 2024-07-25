@@ -13,7 +13,7 @@ metadata:
 spec:
   destination:
     namespace: openshift-operators
-    server: 'https://kubernetes.default.svc'
+    server: "https://kubernetes.default.svc"
   project: services
   source:
     path: operators/ibm-automation-foundation-core-operator
@@ -22,12 +22,12 @@ spec:
         ibm-automation-foundation-core-operator:
           subscriptions:
             ibmautomation:
-              name: ibm-automation-foundation-core
+              name: ibm-automation-core
               subscription:
                 channel: v1.3
                 installPlanApproval: Automatic
                 name: ibm-automation-core
-                source: iaf-core-operators
+                source: ibm-operator-catalog
                 sourceNamespace: openshift-marketplace
   syncPolicy:
     automated:
